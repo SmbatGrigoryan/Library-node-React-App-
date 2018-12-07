@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
-import { devToolsEnhancer } from 'redux-devtools-extension';
+//import { devToolsEnhancer } from 'redux-devtools-extension';
 
 import reducers from './Reducers/index';
 import Routes from './Routes';
@@ -14,7 +14,7 @@ import Routes from './Routes';
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware,ReduxThunk)(createStore);
 
 ReactDOM.render(
-    <Provider store={createStoreWithMiddleware(reducers, devToolsEnhancer())}>
+    <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Routes/>
       </BrowserRouter>
