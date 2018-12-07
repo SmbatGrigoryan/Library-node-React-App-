@@ -1,5 +1,5 @@
 {
-  "name": "libraryApp",
+  "name": "libraryapp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -22,5 +22,13 @@
     "mongoose": "^5.3.3",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmbatGrigoryan/Library-node-React-App-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SmbatGrigoryan/Library-node-React-App-/issues"
+  },
+  "homepage": "https://github.com/SmbatGrigoryan/Library-node-React-App-#readme"
 }
